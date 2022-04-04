@@ -1,10 +1,10 @@
 ## Introduction 
 
   A small web application that serves the Tweeter interface. It will support the following functionality:
-• Allow the user to input and send messages.
-• Display the user's messages.
-• If a user's input is less than or equal to 50 characters, post it as is.
-• If a user's input is greater than 50 characters, split it into chunks that each is less than or equal to 50 characters and post each chunk as a separate message.
+ - Allow the user to input and send messages.
+ -  Display the user's messages.
+  + If a user's input is less than or equal to 50 characters, post it as is.
+  + If a user's input is greater than 50 characters, split it into chunks that each is less than or equal to 50 characters and post each chunk as a separate message.
 
 
 ## Enviroment 
