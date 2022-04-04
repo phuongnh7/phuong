@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/logic/TwitMessage.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/logic</a> TwitMessage.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>37/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>36/36</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">889x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">429x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">429x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">424x</span>
+<span class="cline-any cline-yes">424x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">424x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">424x</span>
+<span class="cline-any cline-yes">424x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">406x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const MSG_LENGTH = 50;
+&nbsp;
+// Part indicator
+const chunkMessagePrefix = (part, total) =&gt; `${part}/${total} `;
+&nbsp;
+// Spit message into chunks (without part indicator) on whitespace
+const chunkMessageContent = (message, estTotalChunk) =&gt; {
+    const chunkContents = [];
+&nbsp;
+    let remainMessage = message;//messgae not push into chunks
+    let partNumber = 1;
+    let chunkContentSize = MSG_LENGTH - chunkMessagePrefix(partNumber, estTotalChunk).length;
+&nbsp;
+    while (remainMessage.length &gt; chunkContentSize) {
+        //Find position to spit message 
+        const splitAt = remainMessage.lastIndexOf(' ', chunkContentSize);
+&nbsp;
+        if (splitAt === -1) {
+            // No whitespace found, throw error
+            throw new Error(
+                'Message contains a span of non-whitespace characters too long'
+            );
+        } else {
+            //Get chunk and push to list result
+            const chunkContent = remainMessage.slice(0, splitAt);
+            chunkContents.push(chunkContent);
+            //remain messgae not push into chunks
+            remainMessage = remainMessage.slice(splitAt + 1);
+        }
+&nbsp;
+        partNumber++;
+        chunkContentSize = MSG_LENGTH - chunkMessagePrefix(partNumber, estTotalChunk).length;
+    }
+&nbsp;
+    //push last chunk
+    chunkContents.push(remainMessage);
+&nbsp;
+    return chunkContents;
+}
+&nbsp;
+export const splitMessage = (message) =&gt; {
+    let msgLen = message.length;
+    if (msgLen &lt;= MSG_LENGTH) {//length less than limit, post it as is
+        return [message];
+    }
+    else {  // length exceed limit, need to spit into chunks
+&nbsp;
+        // Esitimate total of chunks 
+        let minPrefixLength = chunkMessagePrefix(1, 2).length;
+        let estTotalChunk = Math.ceil(msgLen / (MSG_LENGTH - minPrefixLength));
+        if (estTotalChunk &gt; 9) {
+            //when total chunks &gt; 9, perfix (part indicator) length greater than min prefix length,
+            // need restimate total chunks
+            // Estimate total of chunks with average length of prefix 
+            let avgPrefixLength = chunkMessagePrefix(estTotalChunk / 2, estTotalChunk).length;
+            estTotalChunk = Math.ceil(msgLen / (MSG_LENGTH - avgPrefixLength))
+        }
+        
+        // Spit message into chunks (without part indicator) on whitespace
+        let chunkMessages = chunkMessageContent(message, estTotalChunk);
+&nbsp;
+        let totalChunk = chunkMessages.length;
+        while ((totalChunk &gt; estTotalChunk)
+            &amp;&amp; (chunkMessagePrefix(1, totalChunk).length &gt; chunkMessagePrefix(1, estTotalChunk).length)) {
+            //part indicator length is increased may affects chunk length
+            // Spit again with new estimate chunks (total chunks at before split)
+            estTotalChunk = totalChunk;
+            chunkMessages = chunkMessageContent(message, estTotalChunk);
+            totalChunk = chunkMessages.length;
+        }
+&nbsp;
+        // Set result includes part indicator and content
+        for (let i = 0; i &lt; totalChunk; i++) {
+            chunkMessages[i] = chunkMessagePrefix(i + 1, totalChunk) + chunkMessages[i];
+        }
+&nbsp;
+        return chunkMessages;
+    }
+}
+&nbsp;
+export default splitMessage;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Mar 20 2019 14:39:52 GMT+0700 (Indochina Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

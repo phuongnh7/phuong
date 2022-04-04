@@ -1,0 +1,45 @@
+{
+  "name": "twit-split",
+  "version": "0.8.0",
+  "author": "nguyen.hoai.phuong780@gmail.com",
+  "private": true,
+  "jest": {
+    "collectCoverageFrom": [
+      "src/component/*.{js,jsx,ts,tsx}",
+      "src/logic/*.{js,ts}",
+      "src/App.js",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ]
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:e2e": "jest -c e2e/jest.config.js",
+    "test:e2eWithWatch": "jest -c e2e/jest.config.js --watch",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "react-test-renderer": "^16.8.4",
+    "jest-puppeteer": "^3.7.0",
+    "puppeteer": "^1.13.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

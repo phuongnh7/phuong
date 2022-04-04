@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1553067592943" clover="3.2.0">
+  <project timestamp="1553067592943" name="All files">
+    <metrics statements="58" coveredstatements="58" conditionals="22" coveredconditionals="22" methods="12" coveredmethods="12" elements="92" coveredelements="92" complexity="0" loc="58" ncloc="58" packages="3" files="3" classes="3">
+      <package name="src">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="App.js" path="/Users/mac/Documents/Working/Mywork/Zalora/twit-split/src/App.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="6" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.component">
+        <metrics statements="21" coveredstatements="21" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8"/>
+        <file name="SendMessage.js" path="/Users/mac/Documents/Working/Mywork/Zalora/twit-split/src/component/SendMessage.js">
+          <metrics statements="21" coveredstatements="21" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8"/>
+          <line num="7" count="10" type="stmt"/>
+          <line num="8" count="10" type="stmt"/>
+          <line num="9" count="10" type="stmt"/>
+          <line num="13" count="7" type="stmt"/>
+          <line num="17" count="6" type="stmt"/>
+          <line num="19" count="6" type="stmt"/>
+          <line num="20" count="6" type="stmt"/>
+          <line num="21" count="4" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="29" count="23" type="stmt"/>
+          <line num="55" count="23" type="cond" truecount="4" falsecount="0"/>
+          <line num="57" count="4" type="stmt"/>
+          <line num="71" count="23" type="cond" truecount="2" falsecount="0"/>
+          <line num="72" count="2" type="stmt"/>
+          <line num="74" count="21" type="cond" truecount="2" falsecount="0"/>
+          <line num="75" count="2" type="stmt"/>
+          <line num="81" count="19" type="cond" truecount="2" falsecount="0"/>
+          <line num="82" count="2" type="stmt"/>
+          <line num="87" count="4" type="stmt"/>
+          <line num="98" count="23" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.logic">
+        <metrics statements="36" coveredstatements="36" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <file name="TwitMessage.js" path="/Users/mac/Documents/Working/Mywork/Zalora/twit-split/src/logic/TwitMessage.js">
+          <metrics statements="36" coveredstatements="36" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="4" count="889" type="stmt"/>
+          <line num="7" count="3" type="stmt"/>
+          <line num="8" count="22" type="stmt"/>
+          <line num="10" count="22" type="stmt"/>
+          <line num="11" count="22" type="stmt"/>
+          <line num="12" count="22" type="stmt"/>
+          <line num="14" count="22" type="stmt"/>
+          <line num="16" count="429" type="stmt"/>
+          <line num="18" count="429" type="cond" truecount="2" falsecount="0"/>
+          <line num="20" count="5" type="stmt"/>
+          <line num="25" count="424" type="stmt"/>
+          <line num="26" count="424" type="stmt"/>
+          <line num="28" count="424" type="stmt"/>
+          <line num="31" count="424" type="stmt"/>
+          <line num="32" count="424" type="stmt"/>
+          <line num="36" count="17" type="stmt"/>
+          <line num="38" count="17" type="stmt"/>
+          <line num="41" count="3" type="stmt"/>
+          <line num="42" count="27" type="stmt"/>
+          <line num="43" count="27" type="cond" truecount="2" falsecount="0"/>
+          <line num="44" count="8" type="stmt"/>
+          <line num="49" count="19" type="stmt"/>
+          <line num="50" count="19" type="stmt"/>
+          <line num="51" count="19" type="cond" truecount="2" falsecount="0"/>
+          <line num="55" count="6" type="stmt"/>
+          <line num="56" count="6" type="stmt"/>
+          <line num="60" count="19" type="stmt"/>
+          <line num="62" count="14" type="stmt"/>
+          <line num="63" count="14" type="cond" truecount="2" falsecount="0"/>
+          <line num="67" count="3" type="stmt"/>
+          <line num="68" count="3" type="stmt"/>
+          <line num="69" count="3" type="stmt"/>
+          <line num="73" count="14" type="stmt"/>
+          <line num="74" count="406" type="stmt"/>
+          <line num="77" count="14" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
