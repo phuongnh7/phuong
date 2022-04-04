@@ -1,4 +1,4 @@
-##Introduction 
+## Introduction 
 
   A small web application that serves the Tweeter interface. It will support the following functionality:
 • Allow the user to input and send messages.
